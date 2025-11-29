@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Çıtkırıldım Fındık - Giresunnuts Hızlı Sipariş Formu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'hazelnut-green': '#38761d',
+                        'hazelnut-brown': '#b76c33',
+                        'hazelnut-orange': '#f6b26b',
+                        'hazelnut-dark': '#4a2d1f',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+            appearance: textfield;
+        }
+        #quantitySelect {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            padding-right: 40px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 p-4 md:p-5 lg:p-6 font-sans pb-32 md:pb-36">
+    <div class="max-w-2xl mx-auto bg-white p-4 md:p-5 lg:p-6 rounded-lg shadow-lg w-full box-border mb-4">
+        <div class="flex flex-col items-center mb-6">
+            <img src="https://vcard.giresunnuts.com/logo-500.png" alt="Giresunnuts Logo" class="h-20 md:h-24 mb-4 object-contain">
+            <h1 class="text-center text-hazelnut-green text-xl md:text-2xl font-bold leading-tight">
+                Çıtkırıldım Fındık - Giresunnuts <br/>Hızlı Sipariş Formu
+            </h1>
+        </div>
+        <form id="orderForm">
+            
+            <div class="border border-gray-300 rounded-lg p-3 md:p-4 mb-5">
+                <h3 class="mt-0 mb-3 text-hazelnut-brown text-lg md:text-xl font-semibold">Kabuklu Fındık</h3>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Kabuklu Fındık" data-weight="500 gr" data-price="250">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">500 gr</span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">250,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Kabuklu Fındık" data-weight="1 kg" data-price="450">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">1 kg</span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">450,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg p-3 md:p-4 mb-5">
+                <h3 class="mt-0 mb-3 text-hazelnut-brown text-lg md:text-xl font-semibold">Kavrulmuş Fındık</h3>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Kavrulmuş Fındık" data-weight="50 gr" data-price="100">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">50 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">100,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Kavrulmuş Fındık" data-weight="100 gr" data-price="150">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">100 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">150,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Kavrulmuş Fındık" data-weight="250 gr" data-price="350">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">250 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">350,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Kavrulmuş Fındık" data-weight="500 gr" data-price="650">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">500 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">650,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Kavrulmuş Fındık" data-weight="1 kg" data-price="1300">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">1 kg                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">1.300,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg p-3 md:p-4 mb-5">
+                <h3 class="mt-0 mb-3 text-hazelnut-brown text-lg md:text-xl font-semibold">Pikola Fındık</h3>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Pikola Fındık" data-weight="50 gr" data-price="100">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">50 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">100,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Pikola Fındık" data-weight="100 gr" data-price="200">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">100 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">200,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Pikola Fındık" data-weight="250 gr" data-price="425">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">250 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">425,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg p-3 md:p-4 mb-5">
+                <h3 class="mt-0 mb-3 text-hazelnut-brown text-lg md:text-xl font-semibold">Krokan</h3>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Krokan" data-weight="40 gr" data-price="100">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">40 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">100,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Krokan" data-weight="100 gr" data-price="175">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">100 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">175,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Krokan" data-weight="250 gr" data-price="450">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">250 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">450,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Krokan" data-weight="1 kg" data-price="1750">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">1 kg                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">1.750,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border border-gray-300 rounded-lg p-3 md:p-4 mb-5">
+                <h3 class="mt-0 mb-3 text-hazelnut-brown text-lg md:text-xl font-semibold">Fındık Ezmesi</h3>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Fındık Ezmesi" data-weight="100 gr" data-price="125">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">100 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">125,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Fındık Ezmesi" data-weight="200 gr" data-price="250">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">200 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">250,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Fındık Ezmesi" data-weight="300 gr" data-price="300">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">300 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">300,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Fındık Ezmesi" data-weight="400 gr" data-price="400">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">400 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">400,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border border-gray-300 rounded-lg p-3 md:p-4 mb-5">
+                <h3 class="mt-0 mb-3 text-hazelnut-brown text-lg md:text-xl font-semibold">Fındık Yağı</h3>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Fındık Yağı" data-weight="1 Lt" data-price="250">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">1 Lt                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">250,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Fındık Yağı" data-weight="2 Lt" data-price="475">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">2 Lt                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">475,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg p-3 md:p-4 mb-5">
+                <h3 class="mt-0 mb-3 text-hazelnut-brown text-lg md:text-xl font-semibold">Kestane Balı</h3>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Kestane Balı" data-weight="300 gr" data-price="700">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">300 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">700,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Kestane Balı" data-weight="400 gr" data-price="900">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">400 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">900,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Kestane Balı" data-weight="800 gr" data-price="1750">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">800 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">1.750,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Kestane Balı" data-weight="1 kg" data-price="2250">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">1 kg                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">2.250,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg p-3 md:p-4 mb-5">
+                <h3 class="mt-0 mb-3 text-hazelnut-brown text-lg md:text-xl font-semibold">Çiçek Balı</h3>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Çiçek Balı" data-weight="300 gr" data-price="400">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">300 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">400,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Çiçek Balı" data-weight="400 gr" data-price="500">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">400 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">500,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Çiçek Balı" data-weight="800 gr" data-price="1000">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">800 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">1.000,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Çiçek Balı" data-weight="1 kg" data-price="1250">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">1 kg                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">1.250,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border border-gray-300 rounded-lg p-3 md:p-4 mb-5">
+                <h3 class="mt-0 mb-3 text-hazelnut-brown text-lg md:text-xl font-semibold">Çay</h3>
+                <div class="option border-b border-dashed border-gray-200 py-2" data-name="Çay" data-weight="500 gr" data-price="175">
+                    <div class="flex justify-between items-center w-full flex-wrap gap-2">
+                        <div class="flex flex-col">
+                            <span class="font-medium min-w-[60px] md:min-w-[80px] text-sm md:text-base">500 gr                        </span>
+                            <button type="button" class="select-quantity-btn text-xs text-blue-600 hover:text-blue-800 underline mt-1 text-left">adet seç</button>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 min-w-[50px] shrink-0">
+                            <button type="button" class="increase bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">+</button>
+                            <input type="number" value="0" min="0" readonly class="w-7 md:w-9 text-center border border-gray-300 p-1 text-xs md:text-sm">
+                            <button type="button" class="decrease bg-hazelnut-green text-white border-none px-2.5 py-1.5 rounded cursor-pointer text-xs md:text-sm w-7 md:w-9 hover:bg-[#2d5a15] active:scale-95">-</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center w-full mt-1">
+                        <span class="unit-price text-[10px] md:text-xs text-gray-500">175,00 ₺ / adet</span>
+                        <span class="sub-total font-bold text-blue-600 text-sm md:text-base">0 ₺</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5">
+        </form>
+    </div>
+
+    <!-- Sabit Alt Bar - Genel Toplam ve Buton -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-300 shadow-lg p-4 md:p-5">
+        <div class="max-w-2xl mx-auto">
+            <div id="total-container" class="p-3 bg-hazelnut-orange text-hazelnut-dark rounded-lg mb-2 text-base md:text-lg font-bold text-center">
+                Genel Toplam: <span id="total-price">0,00 ₺</span>
+            </div>
+            <button type="button" id="proceedButton" class="w-full p-3 bg-hazelnut-green text-white border-none rounded-lg text-sm md:text-base cursor-pointer transition-colors hover:bg-[#2d5a15] disabled:bg-gray-400 disabled:cursor-not-allowed">
+                Bilgileri Gir ve PDF Oluşturmaya Geç
+            </button>
+        </div>
+    </div>
+
+    <!-- Adet Seçim Modal -->
+    <div id="quantityModal" class="hidden fixed z-[1001] left-0 top-0 w-full h-full overflow-auto bg-black/50">
+        <div class="bg-white m-[5%] auto p-5 border border-gray-400 rounded-lg w-[90%] max-w-md shadow-lg box-border">
+            <span class="close-quantity text-gray-400 float-right text-3xl font-bold cursor-pointer hover:text-black">&times;</span>
+            <h2 class="text-hazelnut-green mt-0 mb-4 text-xl font-bold">Adet Seç</h2>
+            <div class="mb-4">
+                <label for="quantitySelect" class="block mb-2 text-gray-800 font-bold">Adet:</label>
+                <select id="quantitySelect" class="w-full p-3 border border-gray-300 rounded text-lg box-border focus:outline-none focus:border-hazelnut-green appearance-none bg-white">
+                    <!-- Options will be generated by JavaScript -->
+                </select>
+            </div>
+            <button type="button" id="confirmQuantityBtn" class="w-full p-4 bg-hazelnut-green text-white border-none rounded-lg text-base md:text-lg cursor-pointer transition-colors hover:bg-[#2d5a15]">
+                Onayla
+            </button>
+        </div>
+    </div>
+
+    <!-- Müşteri Bilgileri Modal -->
+    <div id="customerModal" class="hidden fixed z-[1000] left-0 top-0 w-full h-full overflow-auto bg-black/50">
+        <div class="bg-white m-[5%] auto p-5 border border-gray-400 rounded-lg w-[90%] max-w-lg shadow-lg box-border">
+            <span class="close text-gray-400 float-right text-3xl font-bold cursor-pointer hover:text-black">&times;</span>
+            <h2 class="text-hazelnut-green mt-0 mb-4 text-xl font-bold">Müşteri Bilgileri</h2>
+            <form id="customerForm">
+                <div class="mb-4">
+                    <label for="customerName" class="block mb-1 text-gray-800 font-bold">Ad Soyad <span class="text-red-500">*</span></label>
+                    <input type="text" id="customerName" name="customerName" required class="w-full p-2.5 border border-gray-300 rounded text-base box-border focus:outline-none focus:border-hazelnut-green">
+                    <div class="error-message hidden text-red-600 text-sm mt-1" id="nameError">Lütfen ad soyad giriniz.</div>
+                </div>
+                <div class="mb-4">
+                    <label for="customerPhone" class="block mb-1 text-gray-800 font-bold">Telefon <span class="text-red-500">*</span></label>
+                    <input type="tel" id="customerPhone" name="customerPhone" placeholder="05XX XXX XX XX" required class="w-full p-2.5 border border-gray-300 rounded text-base box-border focus:outline-none focus:border-hazelnut-green">
+                    <div class="error-message hidden text-red-600 text-sm mt-1" id="phoneError">Geçerli bir telefon numarası giriniz.</div>
+                </div>
+                <div class="mb-4">
+                    <label for="customerAddress" class="block mb-1 text-gray-800 font-bold">Adres <span class="text-red-500">*</span></label>
+                    <textarea id="customerAddress" name="customerAddress" required class="w-full p-2.5 border border-gray-300 rounded text-base box-border resize-y min-h-[80px] focus:outline-none focus:border-hazelnut-green"></textarea>
+                    <div class="error-message hidden text-red-600 text-sm mt-1" id="addressError">Lütfen adres bilgisi giriniz.</div>
+                </div>
+                <div class="mb-4">
+                    <label for="customerNote" class="block mb-1 text-gray-800 font-bold">Notlar (Opsiyonel)</label>
+                    <textarea id="customerNote" name="customerNote" placeholder="Teslimat veya sipariş ile ilgili notlarınız..." class="w-full p-2.5 border border-gray-300 rounded text-base box-border resize-y min-h-[80px] focus:outline-none focus:border-hazelnut-green"></textarea>
+                </div>
+                <button type="submit" class="w-full p-4 bg-hazelnut-green text-white border-none rounded-lg text-base md:text-lg cursor-pointer mt-3 transition-colors hover:bg-[#2d5a15]">
+                    PDF Oluştur ve İndir
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.min.js"></script>
+
+    <script>
+        // JavaScript Başlangıcı: Fiyat Hesaplama ve Miktar Kontrolü
+        document.addEventListener('DOMContentLoaded', () => {
+            const totalPriceElement = document.getElementById('total-price');
+            const options = document.querySelectorAll('.option');
+            const proceedButton = document.getElementById('proceedButton');
+            
+            // Adet Seçim Modal İşlemleri
+            const quantityModal = document.getElementById('quantityModal');
+            const quantitySelect = document.getElementById('quantitySelect');
+            const confirmQuantityBtn = document.getElementById('confirmQuantityBtn');
+            const closeQuantityBtn = document.querySelector('.close-quantity');
+            let currentOptionElement = null;
+            
+            // Selectbox için 1-1000 arası option'ları oluştur
+            for (let i = 0; i <= 1000; i++) {
+                const option = document.createElement('option');
+                option.value = i;
+                option.textContent = i;
+                quantitySelect.appendChild(option);
+            }
+            
+            // "adet seç" butonlarına tıklama event'i
+            document.querySelectorAll('.select-quantity-btn').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    currentOptionElement = btn.closest('.option');
+                    const currentQuantity = parseInt(currentOptionElement.querySelector('input').value) || 0;
+                    quantitySelect.value = currentQuantity;
+                    quantityModal.classList.remove('hidden');
+                });
+            });
+            
+            // Modal kapatma
+            closeQuantityBtn.addEventListener('click', () => {
+                quantityModal.classList.add('hidden');
+            });
+            
+            window.addEventListener('click', (event) => {
+                if (event.target === quantityModal) {
+                    quantityModal.classList.add('hidden');
+                }
+            });
+            
+            // Onayla butonu
+            confirmQuantityBtn.addEventListener('click', () => {
+                if (currentOptionElement) {
+                    const selectedQuantity = parseInt(quantitySelect.value);
+                    const input = currentOptionElement.querySelector('input');
+                    input.value = selectedQuantity;
+                    updatePrice(currentOptionElement);
+                    quantityModal.classList.add('hidden');
+                }
+            });
+
+            /**
+             * Sayıyı Türkçe formatına çevirir (binlik ayırıcı: nokta, decimal: virgül)
+             * @param {number} num - Formatlanacak sayı
+             * @returns {string} Formatlanmış string
+             */
+            function formatTurkishCurrency(num) {
+                const parts = num.toFixed(2).split('.');
+                const integerPart = parts[0];
+                const decimalPart = parts[1];
+                
+                // Binlik ayırıcı ekle
+                const formattedInteger = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+                
+                return formattedInteger + ',' + decimalPart;
+            }
+
+            /**
+             * Genel toplamı ve ilgili ara toplamları günceller.
+             * @param {HTMLElement} option - Yalnızca bir ürünü güncellemek için kullanılır.
+             */
+            function updatePrice(option = null) {
+                
+                const optionsToUpdate = option ? [option] : options;
+
+                optionsToUpdate.forEach(item => {
+                    const quantityInput = item.querySelector('input');
+                    const subTotalElement = item.querySelector('.sub-total');
+                    
+                    const quantity = parseInt(quantityInput.value);
+                    const price = parseFloat(item.getAttribute('data-price'));
+                    
+                    let subTotal = 0;
+                    if (quantity > 0 && !isNaN(price)) {
+                        subTotal = quantity * price;
+                    }
+                    
+                    // Ara Toplamı Güncelle
+                    subTotalElement.textContent = formatTurkishCurrency(subTotal) + ' ₺';
+                });
+
+                // Tüm ürünleri tekrar dolaşarak Genel Toplamı Hesapla
+                let total = 0;
+                options.forEach(item => {
+                    const quantity = parseInt(item.querySelector('input').value);
+                    const price = parseFloat(item.getAttribute('data-price'));
+                    if (quantity > 0 && !isNaN(price)) {
+                        total += quantity * price;
+                    }
+                });
+                
+                // Genel Toplamı Güncelle
+                totalPriceElement.textContent = formatTurkishCurrency(total) + ' ₺';
+            }
+
+            // Miktar Kontrol Butonlarına Dinleyici Ekle
+            options.forEach(option => {
+                const increaseButton = option.querySelector('.increase');
+                const decreaseButton = option.querySelector('.decrease');
+                const input = option.querySelector('input');
+
+                // Artırma butonu
+                increaseButton.addEventListener('click', () => {
+                    input.value = parseInt(input.value) + 1;
+                    updatePrice(option); 
+                });
+
+                // Azaltma butonu
+                decreaseButton.addEventListener('click', () => {
+                    let value = parseInt(input.value);
+                    if (value > 0) {
+                        input.value = value - 1;
+                        updatePrice(option); 
+                    }
+                });
+            });
+            
+            // Modal İşlemleri
+            const modal = document.getElementById('customerModal');
+            const closeBtn = document.querySelector('.close');
+            const customerForm = document.getElementById('customerForm');
+
+            proceedButton.addEventListener('click', () => {
+                const selectedProducts = [];
+                let finalTotal = 0;
+
+                document.querySelectorAll('.option').forEach(option => {
+                    const quantity = parseInt(option.querySelector('input').value);
+                    const price = parseFloat(option.getAttribute('data-price'));
+
+                    if (quantity > 0) {
+                        const productName = option.getAttribute('data-name');
+                        const productWeight = option.getAttribute('data-weight');
+                        const subtotal = (quantity * price);
+                        finalTotal += subtotal;
+
+                        selectedProducts.push({
+                            name: productName,
+                            weight: productWeight,
+                            quantity: quantity,
+                            price: price,
+                            subtotal: subtotal
+                        });
+                    }
+                });
+
+                if (selectedProducts.length > 0) {
+                    window.selectedProducts = selectedProducts;
+                    window.finalTotal = finalTotal;
+                    modal.classList.remove('hidden');
+                } else {
+                    alert("Lütfen sepetinize en az bir ürün ekleyin.");
+                }
+            });
+
+            closeBtn.addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.classList.add('hidden');
+                }
+            });
+
+            // Form Validasyonu
+            function validatePhone(phone) {
+                const phoneRegex = /^0[5][0-9]{9}$/;
+                return phoneRegex.test(phone.replace(/\s/g, ''));
+            }
+
+            function showError(fieldId, errorId, message) {
+                const field = document.getElementById(fieldId);
+                const error = document.getElementById(errorId);
+                field.classList.add('border-red-600');
+                error.textContent = message;
+                error.classList.remove('hidden');
+            }
+
+            function hideError(fieldId, errorId) {
+                const field = document.getElementById(fieldId);
+                const error = document.getElementById(errorId);
+                field.classList.remove('border-red-600');
+                error.classList.add('hidden');
+            }
+
+            // Form Submit İşlemi
+            customerForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const name = document.getElementById('customerName').value.trim();
+                const phone = document.getElementById('customerPhone').value.trim();
+                const address = document.getElementById('customerAddress').value.trim();
+                const note = document.getElementById('customerNote').value.trim();
+
+                let isValid = true;
+
+                // Validasyonlar
+                if (!name) {
+                    showError('customerName', 'nameError', 'Lütfen ad soyad giriniz.');
+                    isValid = false;
+                } else {
+                    hideError('customerName', 'nameError');
+                }
+
+                if (!phone) {
+                    showError('customerPhone', 'phoneError', 'Lütfen telefon numarası giriniz.');
+                    isValid = false;
+                } else if (!validatePhone(phone)) {
+                    showError('customerPhone', 'phoneError', 'Geçerli bir telefon numarası giriniz. (05XX XXX XX XX)');
+                    isValid = false;
+                } else {
+                    hideError('customerPhone', 'phoneError');
+                }
+
+                if (!address) {
+                    showError('customerAddress', 'addressError', 'Lütfen adres bilgisi giriniz.');
+                    isValid = false;
+                } else {
+                    hideError('customerAddress', 'addressError');
+                }
+
+                if (isValid) {
+                    generatePDF({
+                        name: name,
+                        phone: phone,
+                        address: address,
+                        note: note,
+                        products: window.selectedProducts,
+                        total: window.finalTotal
+                    });
+                    modal.classList.add('hidden');
+                    customerForm.reset();
+                }
+            });
+
+            // PDF Oluşturma Fonksiyonu - PDFMake ile Türkçe karakter desteği
+            function generatePDF(data) {
+                const now = new Date();
+                const day = String(now.getDate()).padStart(2, '0');
+                const monthNames = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 
+                                   'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
+                const month = monthNames[now.getMonth()];
+                const year = now.getFullYear();
+                const hours = String(now.getHours()).padStart(2, '0');
+                const minutes = String(now.getMinutes()).padStart(2, '0');
+                const dateStr = `${day} ${month} ${year} ${hours}:${minutes}`;
+
+                // Ürün tablosu için satırlar
+                const productRows = data.products.map((product, index) => {
+                    const rowColor = index % 2 === 0 ? '#fafafa' : '#ffffff';
+                    return [
+                        {
+                            text: `${product.name} (${product.weight})`,
+                            fillColor: rowColor
+                        },
+                        {
+                            text: `${product.quantity} adet`,
+                            fillColor: rowColor,
+                            alignment: 'center'
+                        },
+                        {
+                            text: `${formatTurkishCurrency(product.price)} ₺`,
+                            fillColor: rowColor,
+                            alignment: 'right'
+                        },
+                        {
+                            text: `${formatTurkishCurrency(product.subtotal)} ₺`,
+                            fillColor: rowColor,
+                            alignment: 'right'
+                        }
+                    ];
+                });
+
+                const docDefinition = {
+                    pageSize: 'A4',
+                    pageMargins: [40, 60, 40, 60],
+                    defaultStyle: {
+                        font: 'Roboto',
+                        fontSize: 11
+                    },
+                    content: [
+                        // Başlık Bölümü
+                        {
+                            stack: [
+                                {
+                                    text: 'Çıtkırıldım Fındık - Giresunnuts Hızlı Sipariş Formu',
+                                    fontSize: 22,
+                                    bold: true,
+                                    color: '#ffffff',
+                                    alignment: 'center',
+                                    margin: [0, 0, 0, 5]
+                                }
+                            ],
+                            fillColor: '#38761d',
+                            margin: [-40, -60, -40, 20],
+                            padding: [20, 0, 20, 0]
+                        },
+                        
+                        // Müşteri Bilgileri
+                        {
+                            text: 'Müşteri Bilgileri',
+                            fontSize: 14,
+                            bold: true,
+                            color: '#38761d',
+                            margin: [0, 0, 0, 10],
+                            fillColor: '#f0f0f0',
+                            padding: [5, 0, 5, 0]
+                        },
+                        {
+                            columns: [
+                                {
+                                    width: 80,
+                                    text: 'Ad Soyad:',
+                                    bold: true
+                                },
+                                {
+                                    width: '*',
+                                    text: data.name
+                                }
+                            ],
+                            margin: [0, 0, 0, 5]
+                        },
+                        {
+                            columns: [
+                                {
+                                    width: 80,
+                                    text: 'Telefon:',
+                                    bold: true
+                                },
+                                {
+                                    width: '*',
+                                    text: data.phone
+                                }
+                            ],
+                            margin: [0, 0, 0, 5]
+                        },
+                        {
+                            columns: [
+                                {
+                                    width: 80,
+                                    text: 'Adres:',
+                                    bold: true
+                                },
+                                {
+                                    width: '*',
+                                    text: data.address
+                                }
+                            ],
+                            margin: [0, 0, 0, 5]
+                        },
+                        ...(data.note ? [{
+                            columns: [
+                                {
+                                    width: 80,
+                                    text: 'Not:',
+                                    bold: true
+                                },
+                                {
+                                    width: '*',
+                                    text: data.note
+                                }
+                            ],
+                            margin: [0, 0, 0, 10]
+                        }] : [{ text: '', margin: [0, 0, 0, 10] }]),
+
+                        // Sipariş Detayları
+                        {
+                            text: 'Sipariş Detayları',
+                            fontSize: 14,
+                            bold: true,
+                            color: '#38761d',
+                            margin: [0, 0, 0, 10],
+                            fillColor: '#f0f0f0',
+                            padding: [5, 0, 5, 0]
+                        },
+                        
+                        // Ürün Tablosu
+                        {
+                            table: {
+                                headerRows: 1,
+                                widths: ['*', 60, 80, 80],
+                                body: [
+                                    [
+                                        {
+                                            text: 'Ürün',
+                                            bold: true,
+                                            color: '#ffffff',
+                                            fillColor: '#38761d'
+                                        },
+                                        {
+                                            text: 'Miktar',
+                                            bold: true,
+                                            color: '#ffffff',
+                                            fillColor: '#38761d',
+                                            alignment: 'center'
+                                        },
+                                        {
+                                            text: 'Birim Fiyat',
+                                            bold: true,
+                                            color: '#ffffff',
+                                            fillColor: '#38761d',
+                                            alignment: 'right'
+                                        },
+                                        {
+                                            text: 'Toplam',
+                                            bold: true,
+                                            color: '#ffffff',
+                                            fillColor: '#38761d',
+                                            alignment: 'right'
+                                        }
+                                    ],
+                                    ...productRows
+                                ]
+                            },
+                            layout: {
+                                paddingLeft: function(i) { return i === 0 ? 5 : 5; },
+                                paddingRight: function(i) { return i === 0 ? 5 : 5; },
+                                paddingTop: function(i) { return i === 0 ? 5 : 5; },
+                                paddingBottom: function(i) { return i === 0 ? 5 : 5; }
+                            },
+                            margin: [0, 0, 0, 10]
+                        },
+
+                        // Genel Toplam
+                        {
+                            text: `GENEL TOPLAM: ${formatTurkishCurrency(data.total)} ₺`,
+                            fontSize: 16,
+                            bold: true,
+                            color: '#4a2d1f',
+                            alignment: 'right',
+                            fillColor: '#f6b26b',
+                            margin: [0, 10, 0, 20],
+                            padding: [10, 5, 10, 5]
+                        },
+
+                        // Tarih
+                        {
+                            text: `Sipariş Tarihi: ${dateStr}`,
+                            fontSize: 9,
+                            color: '#646464',
+                            margin: [0, 10, 0, 10]
+                        },
+
+                        // IBAN Bilgisi
+                        {
+                            text: 'Ödeme Bilgileri',
+                            fontSize: 12,
+                            bold: true,
+                            color: '#38761d',
+                            margin: [0, 10, 0, 5]
+                        },
+                        {
+                            text: 'İLKER UZUNER',
+                            fontSize: 10,
+                            bold: true,
+                            margin: [0, 0, 0, 3]
+                        },
+                        {
+                            text: 'TR600001200171900009109685',
+                            fontSize: 10,
+                            margin: [0, 0, 0, 3]
+                        },
+                        {
+                            text: 'Halkbank GİRESUN ŞUBESİ',
+                            fontSize: 10,
+                            margin: [0, 0, 0, 15]
+                        },
+
+                        // Geçerlilik Notu
+                        {
+                            text: 'Not: Bu sipariş formu 7 (yedi) gün geçerli olup ödeme yaptığınızda lütfen dekontu iletiniz.',
+                            fontSize: 9,
+                            italics: true,
+                            color: '#646464',
+                            margin: [0, 0, 0, 10]
+                        },
+
+                        // Destek Hattı
+                        {
+                            text: 'Destek Hattı: 0542 183 40 28',
+                            fontSize: 9,
+                            color: '#38761d',
+                            bold: true,
+                            margin: [0, 10, 0, 0]
+                        }
+                    ],
+                    styles: {
+                        header: {
+                            fontSize: 18,
+                            bold: true
+                        }
+                    }
+                };
+
+                // PDF oluştur ve indir
+                try {
+                    if (typeof pdfMake !== 'undefined') {
+                        pdfMake.createPdf(docDefinition).download(`Siparis_${data.name.replace(/\s/g, '_')}_${Date.now()}.pdf`);
+                        alert('PDF başarıyla oluşturuldu ve indirildi!');
+                    } else {
+                        alert('PDF kütüphanesi yüklenemedi. Lütfen sayfayı yenileyin.');
+                    }
+                } catch (error) {
+                    console.error('PDF oluşturma hatası:', error);
+                    alert('PDF oluşturulurken bir hata oluştu. Lütfen tekrar deneyin.');
+                }
+            }
+            
+            // Sayfa yüklendiğinde başlangıç fiyatını (0) göster.
+            updatePrice();
+
+        });
+        // JavaScript Bitişi
+    </script>
+</body>
+</html>
